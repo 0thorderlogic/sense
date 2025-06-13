@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENSE</title>
+</head>
+<body>
+<h1>SENSE - <i>SERVO ENABLED NAVIGATION SYSTEM FOR EMPOWERMENT</i></h1>
+<p>Digital accessibility remains a significant challenge for the visually impaired limiting
+their ability to engage with online content. While screen readers and other assistive technologies
+have made strides in improving accessibility, there is still a gap in providing a seamless and
+physical reading experience. This project addresses this challenge by developing an innovative
+system that converts web content into Braille using a combination of web scraping and
+embedded systems.</p>
+
+<p>To bridge these limitations, we aim to develop a working prototype. In this prototype, we
+design and implement a single Braille letter representation unit using six servo motors to
+simulate one Braille cell. This allows us to test and validate the system's feasibility on a smaller
+scale before considering expansion. At the outset, Web Scraping is utilized to periodically
+retrieve line-by-line textual content from online sources. Next, the scrapped text is passed
+through a translation module. In which, the retrieved data is fragmented into singular words with
+the use of a procedural language. Each word is then translated into Braille. The translated Braille
+data is then sent to the hardware device over the internet. The embedded system interprets the
+Braille data and displays it through a hardware device tailored to the requirement, utilizing
+multiple actuators to represent the corresponding combinations of Braille cells. Frequent changes
+in the website structure, handling dynamic content, dealing with CAPTCHA requirements,
+retrieving only the essential data without losing its integrity and structure can prove to be a
+challenge in the process. This system demands very specific hardware engineered to the
+requirements of the setup. The assembly of the same can be unnecessarily expensive. Realizing
+the hardware framework isn't particularly cost-efficient. This emerges as the primary challenge.
+The only language the project plan aims to cater to is English. Hence, this system will prove to
+be obsolete in regards to source data in other languages. In the English Language, the average
+number of letters in a word is five-six, so it is advisable to accommodate just this much for the
+hardware setup to make it cost effective. Hence, handling words with a number of letters higher
+than that will be a challenging task with limited resources. While transmitting data via the
+internet to the hardware system, one might face a real-time performance issue, as there might be
+delay in data transmission and display updates. The designed hardware device should be robust
+and should be able handle continual and sustained utilization.</p>
+</body>
+<style>
+:root {
+	--background: #141420;
+	--text: #fefeff;
+	--link: #d5fe17;
+	--link-hover: #7c56e5;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	background-color: var(--background);
+	color: var(--text);
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+p {
+    line-height: 30px;
+}
+</style>
+</html>
